@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.editor-menu {
+    width: 100%;
+    height: 6rem;
+    background-color: #92A8D1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0 5px 10px;
+}
+
+.btn {
+    border: none;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+    cursor: pointer;
+    background-color: #720ba1;
+    padding: 8px 7px;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    margin-right: 8px;
+    color: rgb(240, 231, 231);
+    min-width: 5rem;
+}
+
+.btn:hover {
+    background-color: rgb(5, 88, 70);
+}
+
+.live {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    border: 2px solid rgb(8, 133, 70);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px 50px;
+    text-decoration-color: #720ba1;
+}
+
+.live>* {
+    cursor: pointer;
+}
+
+.container {
+    position: absolute;
+    bottom: 0;
+    top: 7rem;
+    width: 100%;
+    display: flex;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.left,
+.right {
+    height: 100%;
+    width: 50%;
+    border: 1px solid #1a1818;
+}
+
+.bar {
+    width: 4px;
+    height: 100%;
+    background-color: #eee;
+    cursor: w-resize;
+}
+
+.right {
+    flex: 1;
+}
+
+.editor {
+    width: 200%;
+    height: 200%;
+    font-size: 1.6rem;
+    outline: none;
+    padding: 1rem 0 0 1rem;
+}
+
+.iframe {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: auto;
+    white-space: pre;
+    right: 0;
+    padding: 10px;
+}
